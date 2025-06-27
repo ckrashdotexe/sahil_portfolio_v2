@@ -24,6 +24,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -44,9 +45,7 @@
                 </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <!-- Removed social icons -->
                 </div>
 
                 <div class="home__img">
@@ -66,20 +65,21 @@
             <section class="about section " id="about">
                 <h2 class="section-title">About</h2>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                <div class="about__container bd-grid" style="display: flex; align-items: center; gap: 2rem;">
+                    <div class="about__img" style="flex: 0 0 200px; max-width: 200px;">
+                        <img src="assets/img/about.jpg" alt="" style="width: 100%; border-radius: 1rem;">
                     </div>
                     
-                    <div>
+                    <div style="flex: 1;">
                         <h2 class="about__subtitle">I'am Sahil</h2>
-                        <p class="about__text">A 22 year old commercial and event Photographer with over 5 years behind the lens and a Bachelor's degree in Mass media. my journey began with a camera in hand and a drive to turn moments into impact - now, I help brands, businesses, and events come to life through powerful visuals.</p>
-                            <p>Currently working with connectden films, I've honed a sharp eye for storytelling, composition and clean commercial aesthetics. wheather it's a product shoot that sells or an event that sparks emotion, my work is built to capture atention and create lasting impressions.</p>
+                        <p id="about_content" class="about_text">
+                            A 22 year old commercial and event Photographer with over 5 years behind the lens and a Bachelor's degree in Mass media. My journey began with a camera in hand and a drive to turn moments into impact - now, I help brands, businesses, and events come to life through powerful visuals.
+                            Currently working with connectden films, I've honed a sharp eye for storytelling, composition and clean commercial aesthetics. wheather it's a product shoot that sells or an event that sparks emotion, my work is built to capture atention and create lasting impressions.
                             From intimate product details to large-scale corporate events, I shoot with purpose, precision, and bold creativity. I believe great photography isn't just about images - it's about creating a visual identity that moves people and markets.
-                        
-                        <p>let's create visulas that don't just look good  - they work hard for your brand.</p><br>
-                    
-                     <p> Based in Nalasopara | Available for projects, campaings, and collaraborations</p>           
+                            So, if you're looking for a photographer who can elevate your brand and bring your vision to life, let's connect. Together,
+                            let's create visulas that don't just look good  - they work hard for your brand.
+                            Based in Nalasopara | Available for projects, campaings, and collaraborations   
+                        </p>    
                     </div>                                   
                 </div>
             </section>
@@ -110,6 +110,9 @@
                 </div>
             </section>
 
+            <!--===== PORTFOLIO (React will render here) =====-->
+            <div id="portfolio-root"></div>
+
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
@@ -124,7 +127,7 @@
                 <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Chinmay kumbhar. All rights reserved</p>
+            <p class="footer__copy">&#169; Sahil vishwakarma. All rights reserved</p>
         </footer>
 
 
@@ -133,5 +136,8 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="assets/js/portfolio.js"></script>
     </body>
 </html>
