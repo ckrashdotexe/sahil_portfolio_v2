@@ -98,22 +98,45 @@ function Folder({ color = "#5227FF", size = 1, items = [], className = "" }) {
         "div",
         { className: "folder__back" },
         papers.map((item, i) =>
-          React.createElement(
-            "div",
-            {
-              key: i,
-              className: `paper paper-${i + 1}`,
-              onMouseMove: (e) => handlePaperMouseMove(e, i),
-              onMouseLeave: (e) => handlePaperMouseLeave(e, i),
-              style: open
-                ? {
-                    "--magnet-x": `${paperOffsets[i]?.x || 0}px`,
-                    "--magnet-y": `${paperOffsets[i]?.y || 0}px`,
-                  }
-                : {},
-            },
-            item
-          )
+          item
+            ? React.createElement(
+                "a",
+                {
+                  key: i,
+                  className: `paper paper-${i + 1}`,
+                  href: item.link,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  onClick: (e) => e.stopPropagation(), // Prevent folder toggle on click
+                  onMouseMove: (e) => handlePaperMouseMove(e, i),
+                  onMouseLeave: (e) => handlePaperMouseLeave(e, i),
+                  style: open
+                    ? {
+                        "--magnet-x": `${paperOffsets[i]?.x || 0}px`,
+                        "--magnet-y": `${paperOffsets[i]?.y || 0}px`,
+                      }
+                    : {},
+                },
+                React.createElement("img", {
+                  src: item.img,
+                  alt: `Photo ${i + 1}`,
+                  style: { width: "100%", borderRadius: "0.5rem" }
+                })
+              )
+            : React.createElement(
+                "div",
+                {
+                  key: i,
+                  className: `paper paper-${i + 1}`,
+                  style: open
+                    ? {
+                        "--magnet-x": `${paperOffsets[i]?.x || 0}px`,
+                        "--magnet-y": `${paperOffsets[i]?.y || 0}px`,
+                      }
+                    : {},
+                },
+                ""
+              )
         ),
         React.createElement("div", { className: "folder__front" }),
         React.createElement("div", { className: "folder__front right" })
@@ -130,7 +153,20 @@ document.addEventListener("DOMContentLoaded", function () {
       React.createElement(Folder, {
         color: "#5227FF",
         size: 1,
-        items: ["Project 1", "Project 2", "Project 3"],
+        items: [
+          { 
+            img: "assets/img/photo2.jpeg", // Replace with your image path
+            link: "https://drive.google.com/drive/folders/1uR5i6a8m6kYfZaNce3knSvOx-dmI6rTT?usp=sharing"
+          },
+          { 
+            img: "assets/img/photo1.JPG", // Replace with your image path
+            link: "https://drive.google.com/drive/folders/1uR5i6a8m6kYfZaNce3knSvOx-dmI6rTT?usp=sharing"
+          },
+          { 
+            img: "assets/img/photo3.jpeg", // Replace with your image path
+            link: "https://drive.google.com/drive/folders/1uR5i6a8m6kYfZaNce3knSvOx-dmI6rTT?usp=sharing"
+          },
+        ],
         className: "",
       })
     );

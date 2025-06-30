@@ -998,6 +998,13 @@ body {
   border-radius: 0px 10px 10px 10px;
 }
 
+/* Add this to increase gap between the papers */
+.folder__back {
+  display: flex;
+  gap: 2rem; /* Increase as needed */
+  justify-content: center;
+  align-items: center;
+}
 .folder__back::after {
   position: absolute;
   z-index: 0;
@@ -1012,6 +1019,11 @@ body {
 
 .paper {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
   z-index: 2;
   bottom: 10%;
   left: 50%;
@@ -1021,6 +1033,14 @@ body {
   background: var(--paper-1);
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
+}
+.paper img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  margin: auto;
 }
 
 .paper:nth-child(2) {
