@@ -313,7 +313,20 @@ img {
         gap: 1.5rem;
     }
     .about__img {
-        max-width: 200px;
+        max-width: 180px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__img img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        border-radius: 1rem;
+        object-fit: cover;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
     }
     .about__container > div:last-child {
         margin-left: 0;
