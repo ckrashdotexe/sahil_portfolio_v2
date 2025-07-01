@@ -1,192 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Sahil Vishwakarma</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Sahil Vishwakarma</a>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Sahil Vishwakarma</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Sahil Vishwakarma</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sahil </span><br>Vishwakarma </h1>
+
+
+            </div>
+
+            <div class="home__social">
+                <!-- Removed social icons -->
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                    <image class="home__blob-img" x="50" y="60" href="assets/img/profile.JPG" />
+
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid" style="display: flex; align-items: center; gap: 2rem;">
+                <div class="about__img" style="flex: 0 0 200px; max-width: 200px;">
+                    <img src="assets/img/about.jpg" alt="" style="width: 100%; border-radius: 1rem;">
                 </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
+                <div style="flex: 1;">
+                    <h2 class="about__subtitle">I'am Sahil</h2>
+                    <p id="about_content" class="about_text">
+                        A 22 year old commercial and event Photographer with over 5 years behind the lens and a
+                        Bachelor's degree in Mass media. My journey began with a camera in hand and a drive to turn
+                        moments into impact - now, I help brands, businesses, and events come to life through powerful
+                        visuals.
+                        Currently working with connectden films, I've honed a sharp eye for storytelling, composition
+                        and clean commercial aesthetics. wheather it's a product shoot that sells or an event that
+                        sparks emotion, my work is built to capture atention and create lasting impressions.
+                        From intimate product details to large-scale corporate events, I shoot with purpose, precision,
+                        and bold creativity. I believe great photography isn't just about images - it's about creating a
+                        visual identity that moves people and markets.
+                        So, if you're looking for a photographer who can elevate your brand and bring your vision to
+                        life, let's connect. Together,
+                        let's create visulas that don't just look good - they work hard for your brand.
+                        Based in Nalasopara | Available for projects, campaings, and collaraborations
+                    </p>
                 </div>
+            </div>
+        </section>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sahil </span><br>Vishwakarma </h1>
+            <div class="work__container bd-grid">
+                <a href="" class="work__img">
+                    <img src="assets/img/work 1.jpeg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work2.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work 3.JPG" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work 4.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work 5.JPG" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work 6.jpg" alt="">
+                </a>
+            </div>
+        </section>
 
-                   
-                </div>
-
-                <div class="home__social">
-                    <!-- Removed social icons -->
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/profile.JPG"/>
-                        
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid" style="display: flex; align-items: center; gap: 2rem;">
-                    <div class="about__img" style="flex: 0 0 200px; max-width: 200px;">
-                        <img src="assets/img/about.jpg" alt="" style="width: 100%; border-radius: 1rem;">
-                    </div>
-                    
-                    <div style="flex: 1;">
-                        <h2 class="about__subtitle">I'am Sahil</h2>
-                        <p id="about_content" class="about_text">
-                            A 22 year old commercial and event Photographer with over 5 years behind the lens and a Bachelor's degree in Mass media. My journey began with a camera in hand and a drive to turn moments into impact - now, I help brands, businesses, and events come to life through powerful visuals.
-                            Currently working with connectden films, I've honed a sharp eye for storytelling, composition and clean commercial aesthetics. wheather it's a product shoot that sells or an event that sparks emotion, my work is built to capture atention and create lasting impressions.
-                            From intimate product details to large-scale corporate events, I shoot with purpose, precision, and bold creativity. I believe great photography isn't just about images - it's about creating a visual identity that moves people and markets.
-                            So, if you're looking for a photographer who can elevate your brand and bring your vision to life, let's connect. Together,
-                            let's create visulas that don't just look good  - they work hard for your brand.
-                            Based in Nalasopara | Available for projects, campaings, and collaraborations   
-                        </p>    
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work 1.jpeg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work 3.JPG" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work 4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work 5.JPG" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work 6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-            <!--===== PORTFOLIO (React will render here) =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
+        <!--===== PORTFOLIO (React will render here) =====-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
             <div id="portfolio-root"></div>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
             </section>
-             <div class="landing_page">
-  <div class="responsive-container-block big-container">
-    <img class="bg-img" id="iq5bf" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/clothes-bg.png">
-    <div class="responsive-container-block container">
-      <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one">
-        <div class="content-box">
-          <p class="text-blk section-head">
-           Visuals That Speak Louder Than Words
-          </p>
-          <p class="text-blk section-subhead">
-            With a camera in hand and a story in mind, I capture more than images, I capture meaning Wether it's a reel, or a cinematic short or a product, Every frame is crafted wit intension.
-          </p>
-          
-        </div>
-      </div>
-      <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one" id="i1zj">
-        <form class="form-box">
-          <div class="container-block form-wrapper">
-            <p class="text-blk contactus-head">
-              <a class="link" href="">
-              </a>
-              Get a quote
-            </p>
-            <p class="text-blk contactus-subhead">
-              We will get back to you in 24 hours
-            </p>
-            <div class="responsive-container-block">
-              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-7">
-                <input class="input" id="ijowk-7" name="FirstName" placeholder="First Name">
-              </div>
-              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i1ro7">
-                <input class="input" id="indfi-5" name="Last Name" placeholder="Last Name">
-              </div>
-              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 emial" id="ityct">
-                <input class="input" id="ipmgh-7" name="Email" placeholder="Email">
-              </div>
-              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                <input class="input" id="imgis-6" name="PhoneNumber" placeholder="Phone Number">
-              </div>
-              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-7">
-                <textarea aria-placeholder="Type message here" class="textinput" id="i5vyy-7" placeholder="Type message here"></textarea>
-              </div>
+            <div class="landing_page">
+                <div class="responsive-container-block big-container">
+                    <img class="bg-img" id="iq5bf"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/clothes-bg.png">
+                    <div class="responsive-container-block container">
+                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one">
+                            <div class="content-box">
+                                <p class="text-blk section-head">
+                                    Visuals That Speak Louder Than Words
+                                </p>
+                                <p class="text-blk section-subhead">
+                                    With a camera in hand and a story in mind, I capture more than images, I capture
+                                    meaning Wether it's a reel, or a cinematic short or a product, Every frame is
+                                    crafted wit intension.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one"
+                            id="i1zj">
+                            <form class="form-box">
+                                <div class="container-block form-wrapper">
+                                    <p class="text-blk contactus-head">
+                                        <a class="link" href="">
+                                        </a>
+                                        Get a quote
+                                    </p>
+                                    <p class="text-blk contactus-subhead">
+                                        We will get back to you in 24 hours
+                                    </p>
+                                    <div class="responsive-container-block">
+                                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
+                                            id="i10mt-7">
+                                            <input class="input" id="ijowk-7" name="FirstName" placeholder="First Name">
+                                        </div>
+                                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
+                                            id="i1ro7">
+                                            <input class="input" id="indfi-5" name="Last Name" placeholder="Last Name">
+                                        </div>
+                                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 emial"
+                                            id="ityct">
+                                            <input class="input" id="ipmgh-7" name="Email" placeholder="Email">
+                                        </div>
+                                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                                            <input class="input" id="imgis-6" name="PhoneNumber"
+                                                placeholder="Phone Number">
+                                        </div>
+                                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
+                                            id="i634i-7">
+                                            <textarea aria-placeholder="Type message here" class="textinput"
+                                                id="i5vyy-7" placeholder="Type message here"></textarea>
+                                        </div>
+                                    </div>
+                                    <button class="submit-btn">
+                                        Get quote
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button class="submit-btn">
-              Get quote
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Sahil vishwakarma</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p class="footer__copy">&#169; Sahil vishwakarma. All rights reserved</p>
-        </footer>
+            <!--===== FOOTER =====-->
+            <footer class="footer">
+                <p class="footer__title">Sahil vishwakarma</p>
+                <div class="footer__social">
+              <!-- Facebook -->
+                    <a href="https://www.facebook.com/yourprofile" class="footer__icon" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+            <!-- Instagram -->
+                    <a href="https://www.instagram.com/_mugshots__.__/" class="footer__icon" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+          <!-- Twitter -->
+                    <a href="https://www.twitter.com/yourprofile" class="footer__icon" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+
+                </div>
+                <p class="footer__copy">&#169; Sahil vishwakarma. All rights reserved</p>
+            </footer>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+            <!--===== SCROLL REVEAL =====-->
+            <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-        <script src="assets/js/portfolio.js"></script>
-    </body>
+            <!--===== MAIN JS =====-->
+            <script src="assets/js/main.js"></script>
+            <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+            <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+            <script src="assets/js/portfolio.js"></script>
+</body>
+
 </html>
